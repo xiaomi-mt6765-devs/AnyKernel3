@@ -447,19 +447,25 @@ if [ $? != 0 -o -z "$(ls bin)" ]; then
   abort "Busybox setup failed. Aborting...";
 fi;
 
-if [ -f banner ]; then
-  ui_printfile banner;
-  ui_print " " " ";
-fi;
-
-KERNEL_STRING="$(file_getprop anykernel.sh kernel.string)";
-ui_print "$KERNEL_STRING";
-if [ -f version ]; then
-  ui_print " ";
-  ui_printfile version;
-  ui_print " ";
-fi;
-ui_print " " "AnyKernel3 by osm0sis @ xda-developers" " " " ";
+ui_print "=======================================";
+ui_print " ";
+ui_print " ]]......]]]]..]]]]]].]]..]]..]]]] ";
+ui_print " ]].....]]..]]...]]...]]..]].]] ";
+ui_print " ]].....]]..]]...]]...]]..]]..]]]] ";
+ui_print " ]].....]]..]]...]]...]]..]].....]] ";
+ui_print " ]]]]]]..]]]]....]]....]]]]...]]]] ";
+ui_print " ";
+ui_print " =====================================";
+ui_print " ";
+ui_print "- Introducing: $(file_getprop anykernel.sh kernel.string)";
+ui_print " ";
+ui_print "- Maintainer: $(file_getprop anykernel.sh maintainer.string1 )";
+ui_print " ";
+ui_print "- Android Support: $(file_getprop anykernel.sh supported.versions1 )";
+ui_print " ";
+ui_print "=======================================";
+ui_print "AnyKernel3 by osm0sis @ xda-developers";
+ui_print "=======================================";
 
 setup_env;
 
