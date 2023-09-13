@@ -15,6 +15,7 @@ device.name1=cactus
 device.name2=cereus
 device.name3=certus
 supported.versions1=10-13
+supported.architecture=arm64
 '; } # end properties
 
 # shell variables

@@ -463,6 +463,8 @@ ui_print "- Maintainer: $(file_getprop anykernel.sh maintainer.string1 )";
 ui_print " ";
 ui_print "- Android Support: $(file_getprop anykernel.sh supported.versions1 )";
 ui_print " ";
+ui_print "- Architecture Support: $(file_getprop anykernel.sh supported.architecture )";
+ui_print " ";
 ui_print "=======================================";
 ui_print "AnyKernel3 by osm0sis @ xda-developers";
 ui_print "=======================================";
